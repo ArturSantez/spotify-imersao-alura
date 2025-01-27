@@ -6,6 +6,7 @@
     --cor1: #000;
     --cor2: #121212;
     --cor3: #b3b3b3;
+    --cor4: #fff;
 
     --font1: 'Dm sans', Arial, Helvetica, sans-serif;
 }
@@ -54,4 +55,10 @@ div.sidebar a{
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
+}
+
+div.sidebar a:hover {
+    color: var(--cor4);
+    font-weight: 800;
+    transition: .5s;
 }
