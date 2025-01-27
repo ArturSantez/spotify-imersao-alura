@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --cor1: #000;
+    --cor2: #121212;
+    --cor3: #b3b3b3;
+
+    --font1: 'Dm sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+div.sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+}
+
+nav.sidebar__navigation {
+    background-color: var(--cor2);
+    border-radius: 8px;
+    padding: 16px 0px 0px 16px;
+}
+
+nav.sidebar__navigation div.logo {
+    padding: 16px 0px 0px 16px;
+    
+    display: flex;
+}
+
+div.logo img {
+    width: 80px;
+}
+
+div.sidebar ul {
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+}
+
+div.sidebar li {
+    padding: 10px 0px;
+}
+
+div.sidebar a{
+    color: var(--cor3);
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
