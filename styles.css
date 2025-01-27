@@ -7,12 +7,14 @@
     --cor2: #121212;
     --cor3: #b3b3b3;
     --cor4: #fff;
+    --cor5: #282828;
 
     --font1: 'Dm sans', Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: var(--cor1);
+    font-family: var(--font1);
 }
 
 div.sidebar {
@@ -31,34 +33,80 @@ nav.sidebar__navigation {
 }
 
 nav.sidebar__navigation div.logo {
-    padding: 16px 0px 0px 16px;
-    
+    padding-bottom: 5px;
     display: flex;
 }
 
 div.logo img {
-    width: 80px;
+    width: 90px;
 }
 
 div.sidebar ul {
     margin-top: 20px;
-    padding: 0px 20px 10px 20px;
+    padding: 0px 20px 10px 5px;
 }
 
 div.sidebar li {
     padding: 10px 0px;
 }
 
-div.sidebar a{
+div.sidebar span#home, span#search {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+div.sidebar a {
     color: var(--cor3);
-    font-family: var(--font1);
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 15px;
     text-decoration: none;
 }
 
 div.sidebar a:hover {
     color: var(--cor4);
-    font-weight: 800;
     transition: .5s;
+}
+
+div.sidebar__library {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    border-radius: 8px;
+    padding: 20px 8px 20px 16px;
+    margin-top: 8px;
+}
+
+div.sidebar__library header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.sidebar__library span {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+div.sidebar__library span#book {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+div.sidebar__library div.title:hover {
+    color: var(--cor4);
+    transition: .5s;
+    cursor: pointer;
+}
+
+div.sidebar__library span#plus {
+    font-size: 12px;
+    padding: 8px;
+}
+
+div.sidebar__library span#plus:hover {
+    color: var(--cor4);
+    background-color: var(--cor5);
+    border-radius: 50%;
+    transition: color .5s;
+    cursor: pointer;
 }

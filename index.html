@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
 </head>
 <body>
     <div class="sidebar">
@@ -21,19 +23,29 @@
                 <ul>
                     <li>
                         <a href="">
-                            <span class="material-symbols-outlined">home</span>
+                            <span class="fa fa-home" id="home"></span>
                             <span>Início</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <span class="material-symbols-outlined">search</span> 
+                            <span class="fa fa-search" id="search"></span> 
                             <span>Buscar</span>
                         </a>
                     </li>
                 </ul>
             </div>
+            <div>
         </nav>
+        <div class="sidebar__library">
+            <header>
+                <div class="title">
+                    <span class="fa fa-book" id="book"></span>
+                    <span id="title">Sua biblioteca</span>
+                </div>
+                <span class="fa fa-plus" id="plus"></span>
+            </header>
+        </div>
     </div>
 </body>
 </html>
