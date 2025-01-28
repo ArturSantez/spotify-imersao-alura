@@ -9,6 +9,10 @@
     --cor4: #fff;
     --cor5: #325935;
     --cor6: #5E8C5D; 
+    --cor7: #d3d3d3;
+
+    --grad1: #8C6330;
+    --grad2: #D9AF62;
 
     --font1: 'Dm sans', Arial, Helvetica, sans-serif;
 }
@@ -74,7 +78,7 @@ nav.sidebar__navigation a {
 
 div.sidebar nav.sidebar__navigation a:hover {
     color: var(--cor4);
-    transition: .5s;
+    transition: .3s;
 }
 
 div.sidebar__library {
@@ -107,6 +111,7 @@ div.sidebar__library button.sidebar__library__button {
     border: none;
     margin-right: 10px;
     padding: 20px 10px;
+    cursor: pointer;
 
     display: flex;  
 }
@@ -117,8 +122,22 @@ div.sidebar__library button.sidebar__library__button span.fa {
     padding-right: 8px;
 }
 
+div.sidebar__library button.sidebar__library__button:hover {
+    color: var(--cor4);
+    transition: .3s;
+}
+
 div.sidebar__library div.sidebar__library__content span.fa-plus {
-    margin: 20px 10px;
+    margin: 13px 2px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+div.sidebar__library div.sidebar__library__content span.fa-plus:hover {
+    color: var(--cor4);
+    background-color: var(--cor5);
+    border-radius: 50%;
+    transition: color .3s;
 }
 
 section.sidebar__section-playlist div.sidebar__section-playlist__content{
@@ -143,27 +162,36 @@ div.sidebar__section-playlist__content span.text {
 }
 
 div.sidebar__section-playlist__content span.title {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 div.sidebar__section-playlist__content span.subtitle {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 div.sidebar__section-playlist__content button.sidebar__section-playlist__button {
     background-color: var(--cor4);
     color: var(--cor1);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 900;
     width: 113px;
     border: none;
     border-radius: 20px;
-    margin-top: 5px;
+    margin: 10px 0px;
     padding: 8px;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+div.sidebar__section-playlist__content button.sidebar__section-playlist__button:hover {
+    background-color: var(--cor7);
+    width: 115px;
+    padding: 10px;
+    margin: 8px 0px;
 }
 
 div.sidebar__cookies {
@@ -186,10 +214,71 @@ div.sidebar__languages button.sidebar__languages__button {
     color: var(--cor4);
     font-weight: bold;
     width: 160px;
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--cor7);
     border-radius: 20px;
     margin: 8px;
     padding: 8px;
     cursor: pointer;
     align-items: center;
+}
+
+div.sidebar__languages button.sidebar__languages__button:hover {
+    border-color: var(--cor4);
+    width: 162px;
+    padding: 10px;
+    margin: 6px;
+}
+
+footer {
+    background-image: linear-gradient(to right, var(--grad1), var(--grad2));
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 65px;
+    padding: 11px 24px 7px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.footer__content {
+    color: var(--cor4);
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer__content span.title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+div.footer__content span.subtitle {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+div.footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.footer__button > button{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    font-size: 14px;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 0px;
+    width: 180px;
+    cursor: pointer;
+}
+
+div.footer__button > button:hover {
+    background-color: var(--cor7);
+    padding: 14px;
+    width: 184px;
 }
