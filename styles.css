@@ -3,13 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
 
 :root {
-    --cor1: #000;
-    --cor2: #121212;
-    --cor3: #b3b3b3;
+    --cor1: #132623;
+    --cor2: #214029;
+    --cor3: #97BF7A;
     --cor4: #fff;
-    --cor5: #282828;
+    --cor5: #325935;
+    --cor5: #5E8C5D; 
 
     --font1: 'Dm sans', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,6 +35,8 @@ div.sidebar {
 
 nav.sidebar__navigation {
     background-color: var(--cor2);
+    border-right: 1px solid var(--cor5);
+    border-bottom: 2px solid var(--cor5);
     border-radius: 8px;
     padding: 16px 0px 0px 16px;
 }
@@ -70,6 +79,8 @@ div.sidebar a:hover {
 div.sidebar__library {
     background-color: var(--cor2);
     color: var(--cor3);
+    border-right: 1px solid var(--cor5);
+    border-bottom: 2px solid var(--cor5);
     border-radius: 8px;
     padding: 20px 8px 20px 16px;
     margin-top: 8px;
