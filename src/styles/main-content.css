@@ -57,7 +57,7 @@
     margin-left: 10px;
 }
 
-#search-input {
+.main-container__header__search-input {
     background-color: transparent;
     color: var(--theme-text-secondary);
     border: none;
@@ -66,6 +66,16 @@
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+}
+
+.main-container__header__search-input::placeholder {
+    color: var(--theme-text-secondary);
+}
+
+.main-container__header__search--hover:hover {
+    background-color: var(--theme-border-primary);
+    border: 2px solid var(--theme-border-secondary);
+    transition: .3s;
 }
 
 .main-container__header__login {
@@ -82,6 +92,42 @@
     margin-right: 32px;
 }
 
+.main-container__header__login-subscribe--hover:hover {
+    color: var(--theme-text-secondary);
+    font-size: 16.5px;
+    margin-right: 30px;
+}
+
 .main-container__header__login-enter {
     width: 100px;
+    margin: 1px 0px;
+}
+
+.main-container__header__login-enter--hover:hover {
+    background-color: var(--theme-border-secondary);
+    margin: 0px;
+    padding: 15px;
+}
+
+.main-container__explore {
+    background-color: var(--theme-container-background);
+    color: var(--theme-text-secondary);
+    font-weight: 900;
+    border-radius: 8px;
+    margin: 0px 10px;
+    padding: 30px 16px 16px 16px;
+}
+
+.main-container__explore__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container__explore__content .title {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.main-container__explore__content .subtitle {
+    font-size: 24px;
 }
