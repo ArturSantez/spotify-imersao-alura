@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 .main-container {
-    margin-top: 10px;
+    position: fixed;
+    right: 0;
+    left: 0;
     max-width: 80vw;
     height: 100vh;
     margin-left: 290px;
