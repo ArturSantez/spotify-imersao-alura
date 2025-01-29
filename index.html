@@ -13,48 +13,48 @@
 </head>
 <body>
     <div class="sidebar">
-        <nav class="sidebar__navigation">
-            <div class="logo">
+        <nav class="sidebar__navigation sidebar__background-parent">
+            <div class="sidebar__navigation__logo">
                 <a href="">
-                    <img src="assets/icons/logo-spotify.png" alt="Logo Spotify">
+                    <img class="sidebar__navigation__logo__img" src="assets/icons/logo-spotify.png" alt="Logo Spotify">
                 </a>
             </div>  
-            <ul>
-                <li>
-                    <a href="">
+            <ul class="sidebar__navigation__list">
+                <li class="sidebar__navigation__item-list">
+                    <a class="sidebar__navigation__item-list__link sidebar__navigation__item-list__link--active" href="">
                         <span class="fa fa-home"></span>
                         <span>Início</span>
                     </a>
                 </li>
-                <li>
-                    <a href="">
+                <li class="sidebar__navigation__item-list">
+                    <a class="sidebar__navigation__item-list__link sidebar__navigation__item-list__link--active" href="">
                         <span class="fa fa-search"></span> 
                         <span>Buscar</span>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="sidebar__library">
+        <div class="sidebar__library sidebar__background-parent">
             <div class="sidebar__library__content">
-                <button class="sidebar__library__button">
+                <button class="sidebar__library__content__button sidebar__library__content__button--active">
                     <span class="fa fa-book"></span>
                     <span>Sua biblioteca</span>
                 </button>
-                <span class="fa fa-plus" id="plus"></span>
+                <span class="fa fa-plus fa-plus--active" id="plus"></span>
             </div>
             <section class="sidebar__section-playlist">
                 <div class="sidebar__section-playlist__content">
                     <span class="text title">Crie sua primeira playlist</span>
                     <span class="text subtitle">É fácil, vamos te ajudar.</span>
-                    <button class="sidebar__section-playlist__button">
+                    <button class="button sidebar__section-playlist__content__button sidebar__section-playlist__content__button--active">
                         <span>Criar playlist</span>
                     </button>
                 </div>
                 <div class="sidebar__cookies">
-                    <a href="">Cookies</a>
+                    <a class="sidebar__cookies__link sidebar__cookies__link--active" href="">Cookies</a>
                 </div>
                 <div class="sidebar__languages">
-                    <button class="sidebar__languages__button">
+                    <button class="button sidebar__languages__button sidebar__languages__button--active">
                         <span class="fa fa-globe"></span>
                         <span>Porguês do Brasil</span>
                     </button>
@@ -62,13 +62,13 @@
             </section>
         </div>
     </div>
-    <footer>
+    <footer class="footer">
         <div class="footer__content">
             <span class="text title">TESTAR O PREMIUM DE GRAÇA</span>
             <span class="text subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
         </div>
-        <div class="footer__button">
-            <button>
+        <div class="footer__button footer__button">
+            <button class="big-button footer__btn footer__btn--active">
                 <span>Inscreva-se grátis</span>
             </button>
         </div>

@@ -28,7 +28,17 @@ body {
     font-family: var(--font1);
 }
 
-div.sidebar {
+.button {
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.big-button {
+    border-radius: 60px;
+    padding: 14px 0px;
+}
+
+.sidebar {
     width: 300px;
     position: fixed;
     top: 0;
@@ -37,72 +47,72 @@ div.sidebar {
     padding: 12px;
 }
 
-nav.sidebar__navigation {
-    background-color: var(--cor2);
+.sidebar__background-parent {
     border-right: 1px solid var(--cor6);
     border-bottom: 2px solid var(--cor6);
     border-radius: 8px;
+}
+
+.sidebar__navigation {
+    background-color: var(--cor2);
     padding: 16px 0px 0px 16px;
 }
 
-nav.sidebar__navigation div.logo {
+.sidebar__navigation__logo {
     padding-bottom: 5px;
     display: flex;
 }
 
-nav.sidebar__navigation div.logo img {
+.sidebar__navigation__logo__img {
     width: 90px;
 }
 
-nav.sidebar__navigation ul {
+.sidebar__navigation__list {
     margin-top: 20px;
     padding: 0px 20px 10px 5px;
 }
 
-nav.sidebar__navigation li {
+.sidebar__navigation__item-list {
     padding: 10px 0px;
 }
 
-nav.sidebar__navigation span.fa {
+.sidebar__navigation .fa {
     font-size: 20px;
     margin-right: 10px;
     padding-right: 8px;
 }
 
-nav.sidebar__navigation a {
+.sidebar__navigation__item-list__link {
     color: var(--cor3);
     font-weight: 700;
     font-size: 15px;
     text-decoration: none;
 }
 
-div.sidebar nav.sidebar__navigation a:hover {
+.sidebar__navigation__item-list__link--active:hover {
     color: var(--cor4);
     transition: .3s;
 }
 
-div.sidebar__library {
+.sidebar__library {
     background-color: var(--cor2);
     color: var(--cor3);
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
     padding: 4px 8px;
-    border-right: 1px solid var(--cor6);
-    border-bottom: 2px solid var(--cor6);
-    border-radius: 8px;
     
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-div.sidebar__library div.sidebar__library__content {
+.sidebar__library__content {
     display: flex;
     justify-content: space-between;
 }
 
-div.sidebar__library button.sidebar__library__button {
+.sidebar__library__content__button {
     background-color: transparent;
     color: var(--cor3);
     font-size: 1rem;
@@ -116,31 +126,31 @@ div.sidebar__library button.sidebar__library__button {
     display: flex;  
 }
 
-div.sidebar__library button.sidebar__library__button span.fa {
+.sidebar__library__content__button .fa {
     font-size: 20px;
     margin-right: 10px;
     padding-right: 8px;
 }
 
-div.sidebar__library button.sidebar__library__button:hover {
+.sidebar__library__content__button--active:hover {
     color: var(--cor4);
     transition: .3s;
 }
 
-div.sidebar__library div.sidebar__library__content span.fa-plus {
+.sidebar__library__content .fa-plus {
     margin: 13px 2px;
     padding: 10px;
     cursor: pointer;
 }
 
-div.sidebar__library div.sidebar__library__content span.fa-plus:hover {
+.sidebar__library__content .fa-plus--active:hover {
     color: var(--cor4);
     background-color: var(--cor5);
     border-radius: 50%;
     transition: color .3s;
 }
 
-section.sidebar__section-playlist div.sidebar__section-playlist__content{
+.sidebar__section-playlist__content{
     background-color: var(--cor5);
     border-radius: 10px;
     margin: 8px 0px;
@@ -152,34 +162,32 @@ section.sidebar__section-playlist div.sidebar__section-playlist__content{
     gap: 20px;
 }
 
-div.sidebar__section-playlist__content {
+.sidebar__section-playlist__content {
     display: flex;
     flex-direction: column;
 }
 
-div.sidebar__section-playlist__content span.text {
+.sidebar__section-playlist__content .text {
     color: var(--cor4);
 }
 
-div.sidebar__section-playlist__content span.title {
+.sidebar__section-playlist__content .title {
     font-weight: 900;
 }
 
-div.sidebar__section-playlist__content span.subtitle {
+.sidebar__section-playlist__content .subtitle {
     font-size: 12px;
     font-weight: 700;
 }
 
-div.sidebar__section-playlist__content button.sidebar__section-playlist__button {
+.sidebar__section-playlist__content__button {
     background-color: var(--cor4);
     color: var(--cor1);
     font-size: 12px;
     font-weight: 900;
     width: 113px;
     border: none;
-    border-radius: 20px;
-    margin: 10px 0px;
-    padding: 8px;
+    margin: 3px 0px;
     cursor: pointer;
 
     display: flex;
@@ -187,98 +195,94 @@ div.sidebar__section-playlist__content button.sidebar__section-playlist__button 
     align-items: center;
 }
 
-div.sidebar__section-playlist__content button.sidebar__section-playlist__button:hover {
+.sidebar__section-playlist__content__button--active:hover {
     background-color: var(--cor7);
     width: 115px;
     padding: 10px;
-    margin: 8px 0px;
+    margin: 1px 0px;
 }
 
-div.sidebar__cookies {
+.sidebar__cookies {
     margin: 25px 20px;
 }
 
-div.sidebar__cookies a {
+.sidebar__cookies__link {
     color: var(--cor4);
     font-size: 11px;
     font-weight: 500;
     text-decoration: none;
 }
 
-div.sidebar__cookies a:hover {
+.sidebar__cookies__link--active:hover {
     text-decoration: underline;
 }
 
-div.sidebar__languages button.sidebar__languages__button {
+.sidebar__languages__button {
     background-color: transparent;
     color: var(--cor4);
     font-weight: bold;
     width: 160px;
     border: 1px solid var(--cor7);
-    border-radius: 20px;
     margin: 8px;
-    padding: 8px;
     cursor: pointer;
     align-items: center;
 }
 
-div.sidebar__languages button.sidebar__languages__button:hover {
+.sidebar__languages__button--active:hover {
     border-color: var(--cor4);
     width: 162px;
     padding: 10px;
     margin: 6px;
 }
 
-footer {
+.footer {
     background-image: linear-gradient(to right, var(--grad1), var(--grad2));
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 65px;
+    height: 75px;
     padding: 11px 24px 7px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-div.footer__content {
+.footer__content {
     color: var(--cor4);
     display: flex;
     flex-direction: column;
 }
 
-div.footer__content span.title {
+.footer__content .title {
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-div.footer__content span.subtitle {
+.footer__content .subtitle {
     font-size: 14px;
     font-weight: 700;
 }
 
-div.footer__button {
+.footer__button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.footer__button > button{
+.footer__btn {
     background-color: var(--cor4);
     color: var(--cor1);
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 16px;
     border: none;
-    border-radius: 20px;
-    padding: 12px 0px;
-    width: 180px;
+    font-weight: 900;
+    width: 230px;
     cursor: pointer;
 }
 
-div.footer__button > button:hover {
+.footer__btn--active:hover {
     background-color: var(--cor7);
-    padding: 14px;
-    width: 184px;
+    padding: 16px;
+    width: 235px;
 }
