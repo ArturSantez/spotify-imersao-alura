@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
 
 :root {
-    --cor1: #132623;
-    --cor2: #214029;
-    --cor3: #97BF7A;
-    --cor4: #fff;
-    --cor5: #325935;
-    --cor6: #5E8C5D; 
-    --cor7: #d3d3d3;
+    --theme-background: #020D05; 
+    --theme-container-background: #032613; 
+    --theme-text-primary: #5E8C5D; 
+    --theme-text-secondary: #fff; 
+    --theme-container-child: #044024; 
+    --theme-border-primary: #01401C; 
+    --theme-border-secondary: #d3d3d3; 
 
-    --grad1: #3b0f2b;
-    --grad2: #ff7043;
+    --theme-icon-background: #012611;
+    --theme-arrow-background: rgba(0,0,07);
+
+    --theme-gradient-start: #3b0f2b;
+    --theme-gradient-end: #ff7043;
 
     --font-dm-sans: 'Dm sans', Arial, Helvetica, sans-serif;
 }
