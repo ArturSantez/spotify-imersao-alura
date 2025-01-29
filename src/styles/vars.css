@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --cor1: #132623;
+    --cor2: #214029;
+    --cor3: #97BF7A;
+    --cor4: #fff;
+    --cor5: #325935;
+    --cor6: #5E8C5D; 
+    --cor7: #d3d3d3;
+
+    --grad1: #3b0f2b;
+    --grad2: #ff7043;
+
+    --font-dm-sans: 'Dm sans', Arial, Helvetica, sans-serif;
+}

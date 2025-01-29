@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css"> 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
@@ -16,7 +17,7 @@
         <nav class="sidebar__navigation sidebar__background-parent">
             <div class="sidebar__navigation__logo">
                 <a href="">
-                    <img class="sidebar__navigation__logo__img" src="assets/icons/logo-spotify.png" alt="Logo Spotify">
+                    <img class="sidebar__navigation__logo__img" src="src/assets/icons/logo-spotify.png" alt="Logo Spotify">
                 </a>
             </div>  
             <ul class="sidebar__navigation__list">
@@ -62,13 +63,14 @@
             </section>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer__content">
+    
+    <footer class="disclaimer-premium">
+        <div class="disclaimer-premium__content">
             <span class="text title">TESTAR O PREMIUM DE GRAÇA</span>
             <span class="text subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
         </div>
-        <div class="footer__button footer__button">
-            <button class="big-button footer__btn footer__btn--active">
+        <div class="disclaimer-premium__button">
+            <button class="big-button disclaimer-premium__button__btn disclaimer-premium__button__btn--active">
                 <span>Inscreva-se grátis</span>
             </button>
         </div>

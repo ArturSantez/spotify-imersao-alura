@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
-
-:root {
-    --cor1: #132623;
-    --cor2: #214029;
-    --cor3: #97BF7A;
-    --cor4: #fff;
-    --cor5: #325935;
-    --cor6: #5E8C5D; 
-    --cor7: #d3d3d3;
-
-    --grad1: #3b0f2b;
-    --grad2: #ff7043;
-
-    --font1: 'Dm sans', Arial, Helvetica, sans-serif;
-}
-
 * {
     margin: 0px;
     padding: 0px;
@@ -235,54 +218,56 @@ body {
     margin: 6px;
 }
 
-.footer {
+.disclaimer-premium {
     background-image: linear-gradient(to right, var(--grad1), var(--grad2));
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 75px;
-    padding: 11px 24px 7px 15px;
+    padding: 15px 24px 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer__content {
+.disclaimer-premium__content {
     color: var(--cor4);
     display: flex;
     flex-direction: column;
 }
 
-.footer__content .title {
+.disclaimer-premium__content .title {
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-.footer__content .subtitle {
+.disclaimer-premium__content .subtitle {
     font-size: 14px;
     font-weight: 700;
 }
 
-.footer__button {
+.disclaimer-premium__button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer__btn {
+.disclaimer-premium__button__btn {
     background-color: var(--cor4);
     color: var(--cor1);
     font-size: 16px;
     border: none;
     font-weight: 900;
     width: 230px;
+    margin: 2px 0px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
-.footer__btn--active:hover {
+.disclaimer-premium__button__btn--active:hover {
     background-color: var(--cor7);
-    padding: 16px;
+    padding: 15px;
     width: 235px;
+    margin: 1px 0px;
 }
