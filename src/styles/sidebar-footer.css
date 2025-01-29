@@ -1,30 +1,8 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var( --theme-background);
     font-family: var(--font-dm-sans);
-}
-
-.button {
-    color: var( --theme-background);
-    font-weight: 800;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-}
-
-.big-button {
-    color: var( --theme-background);
-    font-weight: 800;
-    border: none;
-    border-radius: 60px;
-    padding: 14px 0px;
 }
 
 .sidebar {
@@ -34,12 +12,6 @@ body {
     left: 0;
     bottom: 0;
     padding: 12px;
-}
-
-.sidebar__background-parent {
-    border-right: 1px solid var( --theme-border-primary);
-    border-bottom: 2px solid var( --theme-border-primary);
-    border-radius: 8px;
 }
 
 .sidebar__navigation {

@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 .main-container {
     position: fixed;
     right: 0;
@@ -13,7 +11,6 @@
 
 .main-container__header {
     background-color: var(--theme-container-background);
-    border-radius: 8px;
     margin: 10px;
     padding: 16px;
     display: flex;
@@ -103,11 +100,12 @@
 
 .main-container__header__login-enter {
     width: 100px;
-    margin: 1px 0px;
+    margin: 1px 1px;
 }
 
 .main-container__header__login-enter--hover:hover {
     background-color: var(--theme-border-secondary);
+    width: 102px;
     margin: 0px;
     padding: 15px;
 }
@@ -116,7 +114,6 @@
     background-color: var(--theme-container-background);
     color: var(--theme-text-secondary);
     font-weight: 900;
-    border-radius: 8px;
     margin: 0px 10px;
     padding: 30px 16px 16px 16px;
 }
