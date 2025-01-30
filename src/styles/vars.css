@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&display=swap');
 
 :root {
-    --theme-background: #020D05; 
-    --theme-container-background: #032613; 
-    --theme-text-primary: #5E8C5D; 
+    --theme-background: #02060D; 
+    --theme-container-background: #0B1C26; 
+    --theme-text-primary: #68788C; 
     --theme-text-secondary: #fff; 
-    --theme-container-child: #044024; 
-    --theme-border-primary: #01401C; 
+    --theme-container-child: #1D3240; 
+    --theme-border-primary: #2A4359; 
     --theme-border-secondary: #d3d3d3; 
 
-    --theme-icon-background: #012611;
+    --theme-icon-background: #0D1A26;
     --theme-arrow-background: rgba(0,0,07);
 
-    --theme-gradient-start: #8C1BAB;
-    --theme-gradient-end: #448AFF;
+    --theme-gradient-start: #0D132A;
+    --theme-gradient-end: #C127C1;
 
     --font-dm-sans: 'Dm sans', Arial, Helvetica, sans-serif;
 }

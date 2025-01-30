@@ -317,7 +317,7 @@
     right: 10px;
     top: 120px;
     padding: 18px;
-    background-color: #1db954;
+    background-color: var(--theme-container-child);
     border-radius: 100%;
     font-size: 14px;
     opacity: 0;
