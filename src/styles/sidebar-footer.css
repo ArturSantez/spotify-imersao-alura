@@ -201,6 +201,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    height: 13vh;
     padding: 15px 24px 10px 15px;
     display: flex;
     justify-content: space-between;
